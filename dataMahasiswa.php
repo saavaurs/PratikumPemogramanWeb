@@ -36,6 +36,8 @@
 <body>
   <h1>Data Mahasiswa</h1>
 
+  <a href="tambahData.php"><button style="margin-bottom: 12px; background-color: lightblue;">Tambah Data Mahasiswa</button></a>
+
   <table border="1" cellspacing="0" cellpadding="10">
     <tr>
       <th>No</th>
@@ -63,6 +65,10 @@
       <td><?= $mhs['nim']; ?></td>
       <td><?= $mhs['jurusan']; ?></td>
       <td><?= $mhs['nohp']; ?></td>
+      <td>
+        <a href="ubahData.php?id=<?= $mhs['id']; ?>"  onclick="return confirm('Yakin ingin mengubah data ini?');"><button style="background-color: lightgreen;">Ubah</button></a>
+        <a href="hapusData.php?id=<?= $mhs['id']; ?>" onclick="return confirm('Yakin ingin menghapus data ini?');"><button style="background-color: lightcoral;">Hapus</button></a>
+      </td>
     </tr>
     <?php $i++; } ?>
 

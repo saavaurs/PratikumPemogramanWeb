@@ -7,15 +7,19 @@ Development\PratikumPemogramanWeb\register.html -->
     <title>Pendaftaran Akun</title>
     <link rel="stylesheet" href="register.css"> <!-- Menyisipkan file CSS -->
     <script src="main.js" defer></script> <!-- Menyisipkan main.js -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
 </head>
-<body>
+<body style="padding: 20px;">
     <h1>Form Register</h1>
-    <form action="login.php" method="post" enctype="multipart/form-data">
+    <div class="card" style="background-color: darkmagenta; color: whitesmoke">
+  <div class="card-body">
+     <form action="login.php" method="post" enctype="multipart/form-data">
         <label for="nama">Nama Lengkap:</label><br>
         <input type="nama" name="nama"><br>
 
-        <label for="email">Email:</label><br>
-        <input type="email" name="email"><br>
+        <label for="username">Username :</label><br>
+        <input type="text" name="username" id="username"><br>
 
         <label for="password">Password:</label><br>
         <input type="password" name="password"><br><br>
@@ -53,6 +57,13 @@ Development\PratikumPemogramanWeb\register.html -->
     
         <input type="submit" value="Daftar"><br>
     </form>
+    
+  </div>
+</div>
+
+   
     <p><a href="login.html">Sudah punya akun? Login</a></p> <!-- Link ke halaman login -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
 </body>
 </html>
